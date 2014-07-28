@@ -5,10 +5,10 @@
 			var canvasOverlay = document.getElementById('overlay')
 			var debugOverlay = document.getElementById('debug');
 			var overlayContext = canvasOverlay.getContext('2d');
-			canvasOverlay.style.position = "absolute";
-			canvasOverlay.style.top = '0px';
+			//canvasOverlay.style.position = "absolute";
+			//canvasOverlay.style.top = '0px';
 			canvasOverlay.style.zIndex = '100001';
-			canvasOverlay.style.display = 'block';
+			//canvasOverlay.style.display = 'block';
 			debugOverlay.style.position = "absolute";
 			debugOverlay.style.top = '0px';
 			debugOverlay.style.zIndex = '100002';
