@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Facetracking Experiment - Skype</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="animate.css">
+	</head>
+	<body>
+		<div id="stickers" class="animated bounceInDown">
+			<ul>
+				<li class="stickerthumb"><img src="img/sticker01.png" /></li>
+				<li class="stickerthumb"><img src="img/sticker02.png" /></li>
+				<li class="stickerthumb"><img src="img/sticker03.png" /></li>
+				<li class="stickerthumb"><img src="img/sticker04.png" /></li>
+				<li class="stickerthumb"><img src="img/sticker05.png" /></li>
+				<li class="stickerthumb"><img src="img/sticker06.png" /></li>
+				<!--<li class="stickerthumb"><img src="img/sticker07.png" /></li>
+				<li class="stickerthumb"><img src="img/sticker08.png" /></li>
+				<li class="stickerthumb"><img src="img/sticker09.png" /></li>
+				<li class="stickerthumb"><img src="img/sticker10.png" /></li>
+				<li class="stickerthumb"><img src="img/sticker11.png" /></li>
+				<li class="stickerthumb"><img src="img/sticker12.png" /></li>
+				<li class="stickerthumb"><img src="img/sticker13.png" /></li>
+				<li class="stickerthumb"><img src="img/sticker14.png" /></li>-->
+			</ul>
+		</div>
+		<div id="videoscreen">
+		<div class="videooverlay animated fadeIn"></div>
+		<canvas id="compare" width="768" height="480" style="display:none"></canvas>
+		<video id="vid" autoplay loop width="1024" height="480"></video>
+		<canvas id="overlay" width="768" height="480"></canvas>
+		<canvas id="debug" width="768" height="480"></canvas>
+		</div>
+		<p id='gUMMessage'></p>
+		<p>Status : <span id='headtrackerMessage'></span></p>
+		<p><input type="button" onclick="htracker.stop();htracker.start();" value="reinitiate facedetection"></input>
+		<br/><br/>
+		<!--<input type="checkbox" onclick="showProbabilityCanvas()" value="asdfasd"></input>Show probability-map</p>-->
+		<script src="headtrackr.js"></script>
+		<script src="main.js"></script>
+	</body>
+</html>
